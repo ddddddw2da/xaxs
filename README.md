@@ -179,7 +179,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 AutoDiag. Все права защищены.</p>
+                <p>&copy; 2025 AutoDiag. Все права защищены.</p>
             </div>
         </div>
     </footer>
