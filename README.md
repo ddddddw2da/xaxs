@@ -173,7 +173,7 @@
                     <h3>Контакты</h3>
                     <ul>
                         <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Автодиагностики, 15</li>
-                        <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                        <li><i class="fas fa-phone"></i> +7 926 70 8013 </li>
                         <li><i class="fas fa-envelope"></i> support@autodiag.ru</li>
                     </ul>
                 </div>
