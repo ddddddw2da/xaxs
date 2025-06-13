@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoDiag - Удаленная диагностика автомобилей</title>
+    <title>AutoScan - Премиальная диагностика автомобилей</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="glass-header">
         <div class="container">
             <div class="logo">
-                <h1>Auto<span>Diag</span></h1>
-                <p>Умная диагностика вашего авто</p>
+                <div class="logo-icon">
+                    <i class="fas fa-car-side"></i>
+                </div>
+                <div>
+                    <h1>Auto<span>Scan</span></h1>
+                    <p>Профессиональная диагностика</p>
+                </div>
             </div>
             <nav>
                 <ul>
@@ -20,8 +28,8 @@
                     <li><a href="about.html">О сервисе</a></li>
                     <li><a href="features.html">Возможности</a></li>
                     <li><a href="pricing.html">Тарифы</a></li>
-                    <li><a href="mobile-app.html">Мобильное приложение</a></li>
-                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="mobile-app.html">Приложение</a></li>
+                    <li><a href="contact.html" class="contact-btn">Контакты</a></li>
                 </ul>
             </nav>
             <div class="mobile-menu">
@@ -31,74 +39,177 @@
     </header>
 
     <section class="hero">
+        <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
-                <h2>Удаленная диагностика автомобиля в реальном времени</h2>
-                <p>Получайте подробные отчеты о состоянии вашего автомобиля прямо на смартфон</p>
-                <a href="#" class="btn">Попробовать бесплатно</a>
+                <span class="hero-badge">Новое поколение диагностики</span>
+                <h2>Умный контроль состояния вашего автомобиля</h2>
+                <p>Получайте точные данные и профессиональные рекомендации прямо в вашем смартфоне</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">
+                        <i class="fas fa-play"></i> Демо-версия
+                    </a>
+                    <a href="#" class="btn btn-secondary">
+                        <i class="fas fa-mobile-alt"></i> Скачать приложение
+                    </a>
+                </div>
             </div>
             <div class="hero-image">
-                <img src="images/app-screenshot.png" alt="Мобильное приложение AutoDiag">
+                <img src="images/app-3d.png" alt="Мобильное приложение AutoScan" class="app-3d">
+                <div class="circle-decor circle-1"></div>
+                <div class="circle-decor circle-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <div class="container">
+            <p>Доверяют ведущие автопроизводители</p>
+            <div class="partners-grid">
+                <img src="images/brands/audi.svg" alt="Audi">
+                <img src="images/brands/bmw.svg" alt="BMW">
+                <img src="images/brands/mercedes.svg" alt="Mercedes">
+                <img src="images/brands/toyota.svg" alt="Toyota">
+                <img src="images/brands/ford.svg" alt="Ford">
             </div>
         </div>
     </section>
 
     <section class="how-it-works">
         <div class="container">
-            <h2>Как это работает</h2>
+            <div class="section-header">
+                <span class="section-subtitle">Как это работает</span>
+                <h2>Простое подключение — профессиональный результат</h2>
+            </div>
             <div class="steps">
                 <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Подключите сканер</h3>
-                    <p>Используйте OBD2 адаптер для подключения к диагностическому разъему вашего автомобиля</p>
+                    <div class="step-icon">
+                        <div class="step-number">1</div>
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Подключение</h3>
+                    <p>Подсоедините сканер к диагностическому разъёму OBD2 вашего автомобиля</p>
                 </div>
                 <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Синхронизация с приложением</h3>
-                    <p>Свяжите сканер с нашим мобильным приложением через Bluetooth</p>
+                    <div class="step-icon">
+                        <div class="step-number">2</div>
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Синхронизация</h3>
+                    <p>Запустите приложение и подключитесь к сканеру через Bluetooth</p>
                 </div>
                 <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Получайте аналитику</h3>
-                    <p>Приложение собирает данные и предоставляет подробные отчеты о состоянии автомобиля</p>
+                    <div class="step-icon">
+                        <div class="step-number">3</div>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Анализ</h3>
+                    <p>Получайте данные в реальном времени и подробные отчёты</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="features-overview">
+    <section class="features">
         <div class="container">
-            <h2>Ключевые возможности</h2>
+            <div class="section-header center">
+                <span class="section-subtitle">Возможности</span>
+                <h2>Комплексный мониторинг всех систем</h2>
+            </div>
             <div class="features-grid">
-                <div class="feature">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Мониторинг в реальном времени</h3>
-                    <p>Отслеживайте параметры работы двигателя, расход топлива и другие показатели</p>
+                <div class="feature-card">
+                    <div class="feature-icon gradient-1">
+                        <i class="fas fa-engine"></i>
+                    </div>
+                    <h3>Двигатель</h3>
+                    <p>Мониторинг параметров работы двигателя, расхода топлива и температуры</p>
                 </div>
-                <div class="feature">
-                    <i class="fas fa-bug"></i>
+                <div class="feature-card">
+                    <div class="feature-icon gradient-2">
+                        <i class="fas fa-car-battery"></i>
+                    </div>
+                    <h3>Электроника</h3>
+                    <p>Диагностика электронных систем и состояния аккумулятора</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon gradient-3">
+                        <i class="fas fa-tire"></i>
+                    </div>
+                    <h3>Ходовая часть</h3>
+                    <p>Контроль состояния подвески, тормозной системы и давления в шинах</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon gradient-4">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
                     <h3>Диагностика ошибок</h3>
-                    <p>Расшифровка кодов ошибок и рекомендации по их устранению</p>
+                    <p>Расшифровка кодов ошибок с рекомендациями по устранению</p>
                 </div>
-                <div class="feature">
-                    <i class="fas fa-history"></i>
-                    <h3>История поездок</h3>
-                    <p>Сохранение и анализ данных о ваших поездках</p>
+                <div class="feature-card">
+                    <div class="feature-icon gradient-5">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <h3>Отчёты</h3>
+                    <p>Профессиональные отчёты для сервисных центров в PDF формате</p>
                 </div>
-                <div class="feature">
-                    <i class="fas fa-bell"></i>
+                <div class="feature-card">
+                    <div class="feature-icon gradient-6">
+                        <i class="fas fa-bell"></i>
+                    </div>
                     <h3>Уведомления</h3>
-                    <p>Оповещения о неисправностях и необходимости ТО</p>
+                    <p>Своевременные оповещения о неисправностях и необходимости ТО</p>
                 </div>
-                <div class="feature">
-                    <i class="fas fa-file-pdf"></i>
-                    <h3>Отчеты</h3>
-                    <p>Формирование PDF отчетов для сервисных центров</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-showcase">
+        <div class="container">
+            <div class="app-content">
+                <div class="section-header">
+                    <span class="section-subtitle">Мобильное приложение</span>
+                    <h2>Интуитивно понятный интерфейс</h2>
+                    <p>Наше приложение сочетает мощный функционал с простым и удобным интерфейсом, доступным каждому автовладельцу</p>
                 </div>
-                <div class="feature">
-                    <i class="fas fa-cloud"></i>
-                    <h3>Облачное хранение</h3>
-                    <p>Доступ к данным диагностики с любого устройства</p>
+                <div class="app-features">
+                    <div class="app-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Реальное время работы всех систем</span>
+                    </div>
+                    <div class="app-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>История всех поездок и диагностик</span>
+                    </div>
+                    <div class="app-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Рекомендации по обслуживанию</span>
+                    </div>
+                </div>
+                <div class="download-buttons">
+                    <a href="#" class="download-btn">
+                        <i class="fab fa-apple"></i>
+                        <div>
+                            <span>Download on the</span>
+                            <strong>App Store</strong>
+                        </div>
+                    </a>
+                    <a href="#" class="download-btn">
+                        <i class="fab fa-google-play"></i>
+                        <div>
+                            <span>Get it on</span>
+                            <strong>Google Play</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="app-screenshots">
+                <div class="phone-mockup">
+                    <img src="images/phone-mockup.png" alt="AutoScan App">
+                    <div class="screen-slider">
+                        <img src="images/app-screen-1.jpg" class="active" alt="App Screen 1">
+                        <img src="images/app-screen-2.jpg" alt="App Screen 2">
+                        <img src="images/app-screen-3.jpg" alt="App Screen 3">
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,20 +217,60 @@
 
     <section class="testimonials">
         <div class="container">
-            <h2>Отзывы наших клиентов</h2>
-            <div class="testimonial-slider">
-                <div class="testimonial">
-                    <p>"Сервис помог выявить проблему с датчиком кислорода до того, как это привело к серьезным поломкам. Экономия денег и времени!"</p>
+            <div class="section-header center">
+                <span class="section-subtitle">Отзывы</span>
+                <h2>Что говорят наши клиенты</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"Сервис помог обнаружить проблему с датчиком кислорода до того, как это привело к серьёзным поломкам. Экономия денег и времени!"</p>
                     <div class="author">
-                        <img src="images/user1.jpg" alt="Иван Петров">
-                        <span>Иван Петров, владелец Toyota Camry</span>
+                        <img src="images/testimonials/user1.jpg" alt="Иван Петров">
+                        <div>
+                            <h4>Иван Петров</h4>
+                            <span>Toyota Camry</span>
+                        </div>
                     </div>
                 </div>
-                <div class="testimonial">
-                    <p>"Очень удобное приложение. Теперь всегда знаю, когда нужно менять масло или фильтры. Отчеты понятные и информативные."</p>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"Очень удобное приложение. Теперь всегда знаю, когда нужно менять масло или фильтры. Отчёты понятные и информативные."</p>
                     <div class="author">
-                        <img src="images/user2.jpg" alt="Елена Смирнова">
-                        <span>Елена Смирнова, владелец Volkswagen Golf</span>
+                        <img src="images/testimonials/user2.jpg" alt="Елена Смирнова">
+                        <div>
+                            <h4>Елена Смирнова</h4>
+                            <span>Volkswagen Golf</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="quote">"Использую в своём автосервисе. Клиенты довольны подробными отчётами, а я экономлю время на диагностике."</p>
+                    <div class="author">
+                        <img src="images/testimonials/user3.jpg" alt="Алексей Ковалёв">
+                        <div>
+                            <h4>Алексей Ковалёв</h4>
+                            <span>Владелец СТО</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -128,58 +279,82 @@
 
     <section class="cta">
         <div class="container">
-            <h2>Готовы начать?</h2>
-            <p>Скачайте наше приложение и получите первую диагностику бесплатно</p>
-            <div class="download-buttons">
-                <a href="#" class="btn-appstore"><img src="images/appstore.png" alt="App Store"></a>
-                <a href="#" class="btn-googleplay"><img src="images/googleplay.png" alt="Google Play"></a>
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>Готовы попробовать?</h2>
+                    <p>Начните использовать AutoScan сегодня и получите первую диагностику бесплатно</p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-light">
+                        <i class="fas fa-envelope"></i> Оставить заявку
+                    </a>
+                    <a href="#" class="btn btn-outline-light">
+                        <i class="fas fa-question-circle"></i> Задать вопрос
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>AutoDiag</h3>
-                    <p>Инновационный сервис удаленной диагностики автомобилей с 2023 года</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                        <div>
+                            <h3>Auto<span>Scan</span></h3>
+                            <p>Инновационная диагностика</p>
+                        </div>
+                    </div>
+                    <p class="footer-about">AutoScan — это современный сервис удалённой диагностики автомобилей, помогающий владельцам и сервисным центрам контролировать состояние транспортных средств.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="footer-column">
-                    <h3>Меню</h3>
+                <div class="footer-col">
+                    <h4>Сервис</h4>
                     <ul>
-                        <li><a href="index.html">Главная</a></li>
-                        <li><a href="about.html">О сервисе</a></li>
-                        <li><a href="features.html">Возможности</a></li>
-                        <li><a href="pricing.html">Тарифы</a></li>
-                        <li><a href="mobile-app.html">Мобильное приложение</a></li>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Возможности</a></li>
+                        <li><a href="#">Тарифы</a></li>
+                        <li><a href="#">Приложение</a></li>
+                        <li><a href="#">Блог</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Поддержка</h3>
+                <div class="footer-col">
+                    <h4>Поддержка</h4>
                     <ul>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">Документация</a></li>
-                        <li><a href="contact.html">Контакты</a></li>
+                        <li><a href="#">Сообщество</a></li>
+                        <li><a href="#">Контакты</a></li>
                         <li><a href="#">Политика конфиденциальности</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Контакты</h3>
-                    <ul>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul class="contact-info">
                         <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Автодиагностики, 15</li>
                         <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
-                        <li><i class="fas fa-envelope"></i> support@autodiag.ru</li>
+                        <li><i class="fas fa-envelope"></i> support@autoscan.ru</li>
+                        <li><i class="fas fa-clock"></i> Пн-Пт: 9:00 - 18:00</li>
                     </ul>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2023 AutoDiag. Все права защищены.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AutoScan. Все права защищены.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
             </div>
         </div>
     </footer>
@@ -187,15 +362,33 @@
     <script src="js/main.js"></script>
 </body>
 </html>
-/* Основные стили */
+/* Общие стили */
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2c3e50;
-    --accent-color: #e74c3c;
-    --light-color: #ecf0f1;
-    --dark-color: #2c3e50;
-    --text-color: #333;
-    --text-light: #7f8c8d;
+    --primary: #4361ee;
+    --primary-dark: #3a56d4;
+    --secondary: #3f37c9;
+    --accent: #f72585;
+    --dark: #1a1a2e;
+    --dark-light: #16213e;
+    --gray: #e2e8f0;
+    --light: #f8f9fa;
+    --white: #ffffff;
+    --success: #4cc9f0;
+    --warning: #f8961e;
+    --danger: #ef233c;
+    
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+    --shadow-xl: 0 20px 50px rgba(0,0,0,0.15);
+    
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-full: 9999px;
+    
+    --transition: all 0.3s ease;
 }
 
 * {
@@ -205,27 +398,124 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: var(--text-color);
-    background-color: #f9f9f9;
+    color: var(--dark);
+    background-color: var(--light);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: var(--radius-lg);
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+    outline: none;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+    background-color: var(--white);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-light {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.btn-light:hover {
+    background-color: var(--gray);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-outline-light {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.btn-outline-light:hover {
+    background-color: var(--white);
+    color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
 }
 
 /* Шапка */
-header {
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.glass-header {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-sm);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    transition: var(--transition);
+}
+
+.glass-header.scroll-down {
+    transform: translateY(-100%);
+}
+
+.glass-header.scroll-up {
+    transform: translateY(0);
+    box-shadow: var(--shadow-md);
 }
 
 header .container {
@@ -235,39 +525,65 @@ header .container {
     padding: 15px 0;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
 .logo h1 {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--dark-color);
+    font-size: 22px;
+    margin-bottom: 2px;
 }
 
 .logo h1 span {
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 .logo p {
     font-size: 12px;
-    color: var(--text-light);
+    color: var(--dark-light);
+    opacity: 0.8;
 }
 
 nav ul {
     display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin-left: 30px;
+    gap: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: var(--dark-color);
     font-weight: 500;
-    transition: color 0.3s;
+    font-size: 15px;
+    transition: var(--transition);
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
 }
 
 nav ul li a:hover, nav ul li a.active {
-    color: var(--primary-color);
+    color: var(--primary);
+}
+
+.contact-btn {
+    background-color: var(--primary);
+    color: var(--white) !important;
+    padding: 8px 16px !important;
+    border-radius: var(--radius-lg) !important;
+}
+
+.contact-btn:hover {
+    background-color: var(--primary-dark) !important;
 }
 
 .mobile-menu {
@@ -278,124 +594,245 @@ nav ul li a:hover, nav ul li a.active {
 
 /* Герой секция */
 .hero {
-    padding: 150px 0 80px;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    position: relative;
+    padding: 180px 0 100px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--white);
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/dots-pattern.png') center/cover;
+    opacity: 0.1;
 }
 
 .hero .container {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 40px;
+    z-index: 1;
 }
 
 .hero-content {
     flex: 1;
-    padding-right: 50px;
 }
 
-.hero-content h2 {
-    font-size: 42px;
+.hero-badge {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 6px 12px;
+    border-radius: var(--radius-full);
+    font-size: 14px;
+    font-weight: 500;
     margin-bottom: 20px;
-    color: var(--dark-color);
 }
 
-.hero-content p {
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
     font-size: 18px;
     margin-bottom: 30px;
-    color: var(--text-light);
+    opacity: 0.9;
+    max-width: 500px;
 }
 
-.btn {
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 12px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #2980b9;
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
 }
 
 .hero-image {
     flex: 1;
-    text-align: center;
+    position: relative;
 }
 
-.hero-image img {
+.app-3d {
+    position: relative;
+    z-index: 2;
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(var(--shadow-xl));
+    animation: float 6s ease-in-out infinite;
+}
+
+.circle-decor {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+}
+
+.circle-1 {
+    width: 300px;
+    height: 300px;
+    top: -50px;
+    right: -50px;
+}
+
+.circle-2 {
+    width: 200px;
+    height: 200px;
+    bottom: -30px;
+    left: -30px;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Партнеры */
+.partners {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.partners p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: var(--dark-light);
+    opacity: 0.7;
+}
+
+.partners-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.partners-grid img {
+    height: 30px;
+    opacity: 0.6;
+    filter: grayscale(100%);
+    transition: var(--transition);
+}
+
+.partners-grid img:hover {
+    opacity: 1;
+    filter: grayscale(0%);
 }
 
 /* Как это работает */
 .how-it-works {
-    padding: 80px 0;
-    background-color: white;
+    padding: 100px 0;
+    background-color: var(--light);
 }
 
-.how-it-works h2 {
-    text-align: center;
+.section-header {
     margin-bottom: 60px;
+    max-width: 600px;
+}
+
+.section-header.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-subtitle {
+    display: inline-block;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.section-header h2 {
     font-size: 36px;
-    color: var(--dark-color);
+    margin-bottom: 16px;
+}
+
+.section-header p {
+    color: var(--dark-light);
+    font-size: 16px;
 }
 
 .steps {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
 .step {
-    flex: 0 0 calc(33.333% - 30px);
+    background-color: var(--white);
+    padding: 40px 30px;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
     text-align: center;
-    padding: 30px;
-    margin-bottom: 30px;
-    background-color: var(--light-color);
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .step:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-lg);
+}
+
+.step-icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
 }
 
 .step-number {
-    width: 60px;
-    height: 60px;
-    background-color: var(--primary-color);
-    color: white;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 36px;
+    height: 36px;
+    background-color: var(--accent);
+    color: var(--white);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0 auto 20px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.step-icon i {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
 }
 
 .step h3 {
+    font-size: 20px;
     margin-bottom: 15px;
-    color: var(--dark-color);
+}
+
+.step p {
+    color: var(--dark-light);
+    font-size: 15px;
 }
 
 /* Возможности */
-.features-overview {
-    padding: 80px 0;
-    background-color: #f5f7fa;
-}
-
-.features-overview h2 {
-    text-align: center;
-    margin-bottom: 60px;
-    font-size: 36px;
-    color: var(--dark-color);
+.features {
+    padding: 100px 0;
+    background-color: var(--white);
 }
 
 .features-grid {
@@ -404,205 +841,411 @@ nav ul li a:hover, nav ul li a.active {
     gap: 30px;
 }
 
-.feature {
-    background-color: white;
+.feature-card {
+    background-color: var(--light);
     padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s;
+    border-radius: var(--radius-xl);
+    transition: var(--transition);
 }
 
-.feature:hover {
+.feature-card:hover {
     transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
 }
 
-.feature i {
-    font-size: 40px;
-    color: var(--primary-color);
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
     margin-bottom: 20px;
+    color: var(--white);
 }
 
-.feature h3 {
+.gradient-1 {
+    background: linear-gradient(45deg, #4361ee, #4cc9f0);
+}
+.gradient-2 {
+    background: linear-gradient(45deg, #7209b7, #b5179e);
+}
+.gradient-3 {
+    background: linear-gradient(45deg, #f8961e, #f94144);
+}
+.gradient-4 {
+    background: linear-gradient(45deg, #43aa8b, #90be6d);
+}
+.gradient-5 {
+    background: linear-gradient(45deg, #577590, #277da1);
+}
+.gradient-6 {
+    background: linear-gradient(45deg, #9d4edd, #c77dff);
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: var(--dark-light);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Показ приложения */
+.app-showcase {
+    padding: 100px 0;
+    background-color: var(--light);
+}
+
+.app-showcase .container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.app-content {
+    flex: 1;
+}
+
+.app-features {
+    margin: 30px 0;
+}
+
+.app-feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     margin-bottom: 15px;
-    color: var(--dark-color);
+}
+
+.app-feature i {
+    color: var(--primary);
+    font-size: 18px;
+}
+
+.app-feature span {
+    font-size: 16px;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background-color: var(--dark);
+    color: var(--white);
+    border-radius: var(--radius-lg);
+    transition: var(--transition);
+}
+
+.download-btn:hover {
+    background-color: var(--dark-light);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.download-btn i {
+    font-size: 24px;
+}
+
+.download-btn div {
+    display: flex;
+    flex-direction: column;
+}
+
+.download-btn div span {
+    font-size: 10px;
+}
+
+.download-btn div strong {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.app-screenshots {
+    flex: 1;
+    position: relative;
+}
+
+.phone-mockup {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.phone-mockup img {
+    position: relative;
+    z-index: 2;
+}
+
+.screen-slider {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.screen-slider img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.screen-slider img.active {
+    opacity: 1;
 }
 
 /* Отзывы */
 .testimonials {
-    padding: 80px 0;
-    background-color: white;
+    padding: 100px 0;
+    background-color: var(--white);
 }
 
-.testimonials h2 {
-    text-align: center;
-    margin-bottom: 60px;
-    font-size: 36px;
-    color: var(--dark-color);
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
-.testimonial-slider {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.testimonial {
-    background-color: #f5f7fa;
+.testimonial-card {
+    background-color: var(--light);
     padding: 30px;
-    border-radius: 10px;
-    margin-bottom: 30px;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.rating {
+    color: var(--warning);
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-style: italic;
+    margin-bottom: 25px;
     position: relative;
 }
 
-.testimonial p {
-    font-style: italic;
-    margin-bottom: 20px;
-    font-size: 18px;
+.quote::before {
+    content: '"';
+    font-size: 60px;
+    color: var(--primary);
+    opacity: 0.2;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    font-family: serif;
 }
 
 .author {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
 .author img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-right: 15px;
     object-fit: cover;
 }
 
+.author h4 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
 .author span {
-    font-weight: 600;
-    color: var(--dark-color);
+    font-size: 14px;
+    color: var(--dark-light);
 }
 
 /* Призыв к действию */
 .cta {
     padding: 80px 0;
-    background: linear-gradient(135deg, var(--primary-color) 0%, #2c3e50 100%);
-    color: white;
-    text-align: center;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--white);
 }
 
-.cta h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.cta p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.download-buttons {
+.cta-card {
+    background-color: var(--white);
+    padding: 60px;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background: url('images/cta-pattern.png') center/cover;
 }
 
-.btn-appstore, .btn-googleplay {
-    display: inline-block;
+.cta-content h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: var(--white);
 }
 
-.btn-appstore img, .btn-googleplay img {
-    height: 50px;
-    border-radius: 7px;
+.cta-content p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 15px;
 }
 
 /* Подвал */
 footer {
-    background-color: var(--dark-color);
-    color: white;
-    padding: 60px 0 0;
+    background-color: var(--dark);
+    color: var(--gray);
+    padding: 80px 0 0;
 }
 
-.footer-content {
+.footer-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
-.footer-column h3 {
+.footer-col h4 {
+    color: var(--white);
     font-size: 18px;
-    margin-bottom: 20px;
-    color: var(--light-color);
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
 }
 
-.footer-column ul {
-    list-style: none;
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: var(--primary);
 }
 
-.footer-column ul li {
-    margin-bottom: 10px;
+.footer-about {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 20px 0;
 }
 
-.footer-column ul li a {
-    color: #bdc3c7;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-column ul li a:hover {
-    color: white;
-}
-
-.footer-column ul li i {
-    margin-right: 10px;
-    color: var(--primary-color);
-}
-
-.social-icons {
+.social-links {
     display: flex;
     gap: 15px;
-    margin-top: 20px;
 }
 
-.social-icons a {
+.social-links a {
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    color: white;
-    transition: background-color 0.3s;
+    transition: var(--transition);
 }
 
-.social-icons a:hover {
-    background-color: var(--primary-color);
+.social-links a:hover {
+    background-color: var(--primary);
+    color: var(--white);
 }
 
-.copyright {
-    text-align: center;
-    padding: 20px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: #bdc3c7;
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    font-size: 15px;
+    transition: var(--transition);
+}
+
+.footer-col ul li a:hover {
+    color: var(--white);
+    padding-left: 5px;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
     font-size: 14px;
 }
 
+.contact-info i {
+    color: var(--primary);
+    width: 20px;
+    text-align: center;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.payment-methods {
+    display: flex;
+    gap: 15px;
+    font-size: 24px;
+}
+
+.payment-methods i {
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.payment-methods i:hover {
+    opacity: 1;
+}
+
 /* Адаптивность */
-@media (max-width: 992px) {
-    .hero .container {
+@media (max-width: 1024px) {
+    .hero h2 {
+        font-size: 40px;
+    }
+    
+    .app-showcase .container {
         flex-direction: column;
     }
     
-    .hero-content {
-        padding-right: 0;
-        margin-bottom: 50px;
+    .app-content {
         text-align: center;
     }
     
-    .steps {
-        flex-direction: column;
+    .download-buttons {
+        justify-content: center;
     }
     
-    .step {
-        flex: 0 0 100%;
-        margin-bottom: 20px;
+    .app-feature {
+        justify-content: center;
     }
 }
 
@@ -615,17 +1258,50 @@ footer {
         display: block;
     }
     
-    .hero-content h2 {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .hero h2 {
         font-size: 32px;
     }
     
-    .hero {
-        padding: 120px 0 60px;
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .cta-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .cta-buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
     }
     
     .download-buttons {
         flex-direction: column;
-        align-items: center;
+    }
+    
+    .section-header h2 {
+        font-size: 28px;
     }
 }
 document.addEventListener('DOMContentLoaded', function() {
@@ -658,7 +1334,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 window.scrollTo({
-                    top: targetElement.offsetTop - 80,
+                    top: targetElement.offsetTop - 100,
                     behavior: 'smooth'
                 });
             }
@@ -666,14 +1342,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Фиксация шапки при скролле
-    const header = document.querySelector('header');
+    const header = document.querySelector('.glass-header');
     let lastScroll = 0;
     
     window.addEventListener('scroll', function() {
         const currentScroll = window.pageYOffset;
         
-        if (currentScroll <= 0) {
+        if (currentScroll <= 100) {
             header.classList.remove('scroll-up');
+            return;
         }
         
         if (currentScroll > lastScroll && !header.classList.contains('scroll-down')) {
@@ -689,32 +1366,27 @@ document.addEventListener('DOMContentLoaded', function() {
         lastScroll = currentScroll;
     });
     
-    // Простой слайдер для отзывов
-    const testimonials = document.querySelectorAll('.testimonial');
-    let currentTestimonial = 0;
+    // Слайдер скриншотов приложения
+    const appScreens = document.querySelectorAll('.screen-slider img');
+    let currentScreen = 0;
     
-    function showTestimonial(index) {
-        testimonials.forEach((testimonial, i) => {
-            testimonial.style.display = i === index ? 'block' : 'none';
-        });
-    }
-    
-    if (testimonials.length > 1) {
-        showTestimonial(0);
+    if (appScreens.length > 1) {
+        function showNextScreen() {
+            appScreens[currentScreen].classList.remove('active');
+            currentScreen = (currentScreen + 1) % appScreens.length;
+            appScreens[currentScreen].classList.add('active');
+        }
         
-        setInterval(() => {
-            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-            showTestimonial(currentTestimonial);
-        }, 5000);
+        setInterval(showNextScreen, 3000);
     }
     
     // Анимация при скролле
     const animateOnScroll = function() {
-        const elements = document.querySelectorAll('.step, .feature');
+        const elements = document.querySelectorAll('.step, .feature-card, .testimonial-card');
         
         elements.forEach(element => {
             const elementPosition = element.getBoundingClientRect().top;
-            const screenPosition = window.innerHeight / 1.3;
+            const screenPosition = window.innerHeight / 1.2;
             
             if (elementPosition < screenPosition) {
                 element.style.opacity = '1';
@@ -729,6 +1401,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Добавление класса активного пункта меню при скролле
     const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav ul li a');
     
     window.addEventListener('scroll', function() {
         let current = '';
@@ -737,16 +1410,25 @@ document.addEventListener('DOMContentLoaded', function() {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
             
-            if (pageYOffset >= (sectionTop - 100)) {
+            if (pageYOffset >= (sectionTop - 150)) {
                 current = section.getAttribute('id');
             }
         });
         
-        navItems.forEach(item => {
-            item.classList.remove('active');
-            if (item.getAttribute('href') === `#${current}`) {
-                item.classList.add('active');
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
             }
         });
     });
+    
+    // Параллакс эффект для герой секции
+    const hero = document.querySelector('.hero');
+    if (hero) {
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.pageYOffset;
+            hero.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
+        });
+    }
 });
