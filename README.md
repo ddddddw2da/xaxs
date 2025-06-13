@@ -361,8 +361,7 @@
 
     <script src="js/main.js"></script>
 </body>
-</html>
-/* Общие стили */
+</html>/* Общие стили */
 :root {
     --primary: #4361ee;
     --primary-dark: #3a56d4;
