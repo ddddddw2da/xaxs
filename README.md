@@ -172,14 +172,14 @@
                 <div class="footer-column">
                     <h3>Контакты</h3>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> 1 ватутинска д6 к 1</li>
-                        <li><i class="fas fa-phone"></i> +7 926 70 8013 </li>
-                        <li><i class="fas fa-envelope"></i> https://cdek.shopping/p/18480534/krossovki-dlya-bega-xlg-runner-deluxe-uniseks-s-nizkim-verxom-kristalno-belyi-1-cernyiyarkii-metallik-zelezno-seryi-adid</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Автодиагностики, 15</li>
+                        <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> support@autodiag.ru</li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 AutoDiag. Все права защищены.</p>
+                <p>&copy; 2023 AutoDiag. Все права защищены.</p>
             </div>
         </div>
     </footer>
