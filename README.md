@@ -514,14 +514,14 @@
                 <div class="footer-col">
                     <h4>Контакты</h4>
                     <ul>
-                        <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                        <li><i class="fas fa-phone"></i> +7 (926) 750-80-13</li>
                         <li><i class="fas fa-envelope"></i> info@autodiagnost.ru</li>
                         <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Автодиагностики, 15</li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 AutoDiagnost. Все права защищены.</p>
+                <p>&copy; 2025 AutoDiagnost. Все права защищены.</p>
             </div>
         </div>
     </footer>
